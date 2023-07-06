@@ -1,0 +1,2 @@
+#!/bin/bash
+chmod -h 644 _hello

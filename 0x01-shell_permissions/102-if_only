@@ -1,0 +1,2 @@
+#!/bin/bash
+if [ -r hello ]; then chmod a+x hello; fi
