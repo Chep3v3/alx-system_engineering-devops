@@ -1,0 +1,55 @@
+#!/bin/bash
+cut -d '':\' -f 1,6 /etc/passwd | sort
+echo "(Ôo)'"'"' >> 1-confused_smiley
+
+echo '#!/bin/bash' > 10-no_more_js
+echo 'echo Hello, World' >> 10-no_more_js
+
+echo '#!/bin/bash' > 100-empty_casks
+echo 'find . -empty | rev | cut -d '/' -f 1 | rev' >> 100-empty_casks
+
+echo '#!/bin/bash' > 101-gifs
+echo 'find . -type f -name *.gif | rev | cut -d '/' -f 1 | cut -d '.' -f 2- | rev | LC_ALL=C sort -f' >> 101-gifs
+
+echo '#!/bin/bash' > 102-acrostic
+echo 'cut -c 1 | paste -s -d '\'''\'''\''' >> 102-acrostic
+
+echo '#!/bin/bash' > 103-the_biggest_fan
+echo 'tail -n +2 | cut -f -1 | sort -k 1 | uniq -c | sort -rnk 1 | head -n 11 | rev | cut -d '\'' '\'' -f -1 | rev' >> 103-the_biggest_fan
+
+echo '#!/bin/bash' > 11-directories
+echo 'find . -type d -not -name '\''.'\'' | wc -l' >> 11-directories
+
+echo '#!/bin/bash' > 12-newest_files
+echo 'ls -t1 | head -n 10' >> 12-newest_files
+
+echo '#!/bin/bash' > 13-unique
+echo 'sort | uniq -u' >> 13-unique
+
+echo '#!/bin/bash' > 14-findthatword
+echo 'grep -i root /etc/passwd' >> 14-findthatword
+
+echo '#!/bin/bash' > 15-countthatword
+echo 'grep -i bin /etc/passwd' >> 15-countthatword
+
+echo '#!/bin/bash' > 16-whatsnext
+echo 'grep -i root -A 3 /etc/passwd' >> 16-whatsnext
+
+echo '#!/bin/bash' > 17-hidethisword
+echo 'grep -i -v bin /etc/passwd' >> 17-hidethisword
+
+echo '#!/bin/bash' > 18-letteronly
+echo 'grep -i ^[a-z] /etc/ssh/sshd_config' >> 18-letteronly
+
+echo '#!/bin/bash' > 19-AZ
+echo 'tr A Z | tr c e' >> 19-AZ
+
+echo '#!/bin/bash' > 2-hellofile
+echo 'cat /etc/passwd' >> 2-hellofile
+
+echo '#!/bin/bash' > 20-hiago
+echo 'tr -d '\''cC'\'' >> 20-hiago
+
+echo rev >> 21-reverse
+
+echo cut -d \':\' -f 1,6 /etc/passwd | sort
